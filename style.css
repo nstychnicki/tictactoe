@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --fundo1: #FF6969;
+    --letra: #FFF5E0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;   
+}
+
+
+.jogo{
+    background-image: radial-gradient(circle, var(--fundo1) 50%, #BB2525);
+    height: 100vh;
+    padding-top: 1px;
+
+    /*display: none;*/
+}
+
+.titulo{
+    color: var(--letra);
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5%;
+}
+
+.nome{
+    color: var(--letra);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.esconder{
+    display: none;
+}
+
+.tabuleiro{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+    background: var(--letra);
+    gap: 5px;
+
+}
+
+.quadrado{
+    min-width: 100px;
+    min-height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    cursor: pointer;
+    background-color: var(--fundo1);
+}
+
+.controles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.reiniciar{
+    background-color: var(--letra);
+    color: var(--fundo1);
+
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.inicio{
+    background-image: radial-gradient(circle, var(--fundo1) 50%, #BB2525);
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.fonte{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--letra);
+    font-size: 30px;
+    margin: 10% 10% 3% 10%;
+}
+
+.fonte2{
+    font-size: 30px;
+    font-weight:500;
+}
+
+
+.input{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+input{
+    width: 20%;
+    padding: 0.5%;
+    border-radius: 30px;
+    border: none;
+}
+
+.inputnome{
+    padding: 10px;
+    font-size: 30px;
+    color: var(--letra );
+
+    font-weight: 400;
+}
+
+.botaojogar{
+    background-color: var(--letra);
+    color: var(--fundo1);
+
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    margin: 3% auto;
+}
+
+
+
