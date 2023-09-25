@@ -9,7 +9,21 @@
 
 </head>
 <body>
-    <main class="jogo">
+    <main class="inicio" id="hide">
+        <section class="fonte">
+            <h1> BEM-VINDO AO JOGUINHO</h1>
+            <h1 class="fonte2"> Digite o nome dos jogadores:</h1>
+        </section>
+        <section class="input" id="forms">
+            <p class="inputnome"> Nome do jogador X</p>
+            <input type="text" id="j1">
+            <p class="inputnome"> Nome do jogador O</p>
+            <input type="text" id="j2">
+        </section>
+        <button  onclick="jogar()" id="jogar" class="botaojogar"> JOGAR</button>
+    </main>
+
+    <main class="jogo" id="hidejogo">
         <section class="titulo">
             <h1>JOGO DA VELHA</h1>
         </section>
@@ -27,24 +41,13 @@
             <div class="quadrado"></div>
             <div class="quadrado"></div>
         </section>
-        <section class="mostrar anunciar esconder"></section>
+        <section class="mostrar anunciador esconder">
+
+        </section>
         <section class="controles">
             <button class="reiniciar"> REINICIAR</button>
         </section>
     </main>
 
-    <main class="inicio">
-        <section class="fonte">
-            <h1> BEM-VINDO AO JOGUINHO</h1>
-            <h1 class="fonte2"> Digite o nome dos jogadores:</h1>
-        </section>
-        <section class="input">
-            <p class="inputnome"> Nome do jogador X</p>
-            <input>
-            <p class="inputnome"> Nome do jogador O</p>
-            <input>
-        </section>
-        <button class="botaojogar"> JOGAR</button>
-    </main>
 </body>
 </html>

@@ -61,13 +61,16 @@
     font-size: 50px;
     cursor: pointer;
     background-color: var(--fundo1);
+
+    color: var(--letra);
 }
 
-.controles{
+.controles button{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: auto;
     margin-top: 1em;
 }
 
@@ -91,6 +94,7 @@
     background-image: radial-gradient(circle, var(--fundo1) 50%, #BB2525);
     height: 100vh;
     padding-top: 1px;
+
 }
 
 .fonte{
@@ -152,5 +156,15 @@ input{
     margin: 3% auto;
 }
 
+.nomejogador{
+    color: var(--letra);
+}
 
+#ganhador{
+    color: white;
+    margin:auto;
+}
 
+#hidejogo{
+    display: none;
+}
